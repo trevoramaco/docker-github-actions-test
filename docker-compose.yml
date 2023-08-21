@@ -1,0 +1,9 @@
+version: "3.5"
+
+services:
+  app:
+    image: ghcr.io/trevoramaco/docker-github-actions-test:main
+    container_name: app
+    ports:
+      - 5000:5000
+    restart: "always"
